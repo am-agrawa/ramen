@@ -59,7 +59,7 @@ const (
 	FailedOver = DRState("FailedOver")
 
 	// TestFailover, state recorded in the DRPC status when the test failover
-	// is initiated but has not been completed yet
+	// is initiated
 	TestFailover = DRState("TestFailover")
 
 	// TestFailedOver, state recorded in the DRPC status when the test failover process
@@ -131,6 +131,7 @@ const (
 	ProgressionDeleting                            = ProgressionStatus("Deleting")
 	ProgressionDeleted                             = ProgressionStatus("Deleted")
 	ProgressionActionPaused                        = ProgressionStatus("Paused")
+	ProgressionTestFailover 					   = ProgressionStatus("TestFailover")
 )
 
 // DRPlacementControlSpec defines the desired state of DRPlacementControl
